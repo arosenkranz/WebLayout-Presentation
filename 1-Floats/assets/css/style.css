@@ -1,0 +1,49 @@
+*, html, body {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+header {
+  background: aquamarine;
+  padding: 10px 0;
+  margin-bottom: 25px;
+}
+
+/* We need this to make sure floated elements stay inside of header */
+header:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+nav ul li{
+  display: inline-block;
+}
+
+article {
+  float:left;
+  width: 65%;
+}
+
+aside {
+  float: right;
+  width: 30%;
+}
+
+article > img {
+  float: left;
+  margin: 0 15px 10px 0;
+}
+
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
