@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Repeating Cards with Flexbox</title>
+  <link href="http://meyerweb.com/eric/tools/css/reset/reset.css" />
+  <link rel="stylesheet" href="style.css">
+
+
+  <style>
+      .inline-form-element {
+        display: flex;
+        background: aquamarine;
+        border: 2px solid black;
+        align-content: center;
+        flex-wrap: wrap;
+      }
+
+      .inline-form-element label {
+        padding: 10px;
+        font-size: 20px;
+        flex-basis: 20%;
+        align-self: center;
+      }
+      
+      .inline-form-element input[type="text"] {
+          flex: 1 1 auto;
+          border: none;
+          outline: none;
+          padding: 10px;
+          font-size: 16px;
+          border-left: 2px solid black;
+          border-right: 2px solid black;
+        }
+      
+      .inline-form-element button {
+        flex-basis: 20%;
+        outline: none;
+        border:none;
+        padding: 20px;
+        font-size: 20px;
+        background: black;
+        color: aquamarine;
+        cursor: pointer;
+      }
+      .inline-form-element button:active {
+        box-shadow: 0 0 5px 2px rgba(0,0,0,0.3) inset;
+      }
+
+      @media only screen and (max-width: 768px) {
+        .inline-form-element {
+          flex-direction: column;
+          flex-wrap:nowrap;
+        }   
+        .inline-form-element input[type="text"] {
+          border: none;
+          flex: auto;
+          padding: 20px
+        }
+      }
+            
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <h1>Form Elements with Flexbox</h1>
+      <div class="examples form-container">
+          <h3>Email Signup</h3>
+          <form class="email-signup">
+              <div class="inline-form-element">
+                <label for="text">Join our email list!</label>
+                <input type="text" id="text" placeholder="Email address">
+                <button type="submit">Sign Up!</button>
+                
+              </div>
+          </form>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

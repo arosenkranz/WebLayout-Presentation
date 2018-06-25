@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Repeating Cards with Flexbox</title>
+  <link href="http://meyerweb.com/eric/tools/css/reset/reset.css" />
+  <link rel="stylesheet" href="style.css">
+
+
+  <style>
+    .card-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
+
+    .card {
+      border: 2px solid #333;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      flex-basis: 31%;
+      flex-grow: 1;
+      margin: 10px;
+      background: rgba(0, 0, 0, 0.3);
+    }
+
+    .card-header,
+    .card-footer {
+      padding: 0 10px;
+    }
+
+    .card-body {
+      border-top: 1px solid gray;
+      border-bottom: 1px solid gray;
+      background: white;
+      flex: auto;
+      padding: 10px;
+    }
+
+    .card-footer {
+      margin-top: auto;
+      border-radius: 0 0 20px 20px;
+      cursor: pointer
+    }
+
+    .card-footer:active {
+      box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3) inset;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="content">
+      <h1>Repeating Card Layout with Flexbox</h1>
+      <div class="examples card-container">
+        <!-- card -->
+        <div class="card">
+          <div class="card-header">
+            <h3>I'm a card header!</h3>
+          </div>
+          <div class="card-body">
+            stumptown Brooklyn Schlitz Tonx authentic whatever direct trade McSweeney's hella Shoreditch Pinterest lomo fanny pack Austin
+            Banksy gastropub leggings you probably haven't heard of them pop-up drinking vinegar post-ironic paleo raw denim
+          </div>
+          <div class="card-footer">
+            <h3>I'm a card footer!</h3>
+          </div>
+        </div>
+
+        <!-- card -->
+        <div class="card">
+          <div class="card-header">
+            <h3>I'm a card header!</h3>
+          </div>
+          <div class="card-body">
+            stumptown Brooklyn Schlitz Tonx authentic whatever direct trade McSweeney's hella Shoreditch Pinterest lomo fanny pack Austin
+            Banksy gastropub leggings you probably haven't heard of them pop-up drinking vinegar post-ironic paleo raw denim
+          </div>
+          <div class="card-footer">
+            <h3>I'm a card footer!</h3>
+          </div>
+        </div>
+
+        <!-- card -->
+        <div class="card">
+          <div class="card-header">
+            <h3>I'm a card header!</h3>
+          </div>
+          <div class="card-body">
+            stumptown Brooklyn Schlitz Tonx authentic whatever direct trade McSweeney's hella Shoreditch Pinterest lomo fanny pack Austin
+            Banksy gastropub leggings you probably haven't heard of them pop-up drinking vinegar post-ironic paleo raw denim
+            stumptown Brooklyn Schlitz Tonx authentic whatever direct trade McSweeney's hella Shoreditch Pinterest lomo fanny
+            pack Austin Banksy gastropub leggings you probably haven't heard of them pop-up drinking vinegar post-ironic
+            paleo raw denim stumptown Brooklyn Schlitz Tonx authentic whatever direct trade McSweeney's hella Shoreditch
+            Pinterest lomo fanny pack Austin Banksy gastropub leggings you probably haven't heard of them pop-up drinking
+            vinegar post-ironic paleo raw denim
+          </div>
+          <div class="card-footer">
+            <h3>I'm a card footer!</h3>
+          </div>
+        </div>
+
+        <!-- card -->
+        <div class="card">
+          <div class="card-header">
+            <h3>I'm a card header!</h3>
+          </div>
+          <div class="card-body">
+            stumptown Brooklyn Schlitz Tonx authentic whatever direct trade McSweeney's hella Shoreditch Pinterest lomo fanny pack Austin
+            Banksy gastropub leggings you probably haven't heard of them pop-up drinking vinegar post-ironic paleo raw denim
+          </div>
+          <div class="card-footer">
+            <h3>I'm a card footer!</h3>
+          </div>
+        </div>
+
+        <!-- card -->
+        <div class="card">
+          <div class="card-header">
+            <h3>I'm a card header!</h3>
+          </div>
+          <div class="card-body">
+            stumptown Brooklyn Schlitz Tonx authentic whatever direct trade McSweeney's hella Shoreditch Pinterest lomo fanny pack Austin
+            Banksy gastropub leggings you probably haven't heard of them pop-up drinking vinegar post-ironic paleo raw denim
+            stumptown Brooklyn Schlitz Tonx authentic whatever direct trade McSweeney's hella Shoreditch Pinterest lomo fanny
+            pack Austin Banksy gastropub leggings you probably haven't heard of them pop-up drinking vinegar post-ironic
+            paleo raw denim stumptown Brooklyn Schlitz Tonx authentic whatever direct trade McSweeney's hella Shoreditch
+            Pinterest lomo fanny pack Austin Banksy gastropub leggings you probably haven't heard of them pop-up drinking
+            vinegar post-ironic paleo raw denim
+          </div>
+          <div class="card-footer">
+            <h3>I'm a card footer!</h3>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
