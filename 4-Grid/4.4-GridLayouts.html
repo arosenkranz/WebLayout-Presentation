@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Grid Demo</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body {
+      margin: 50px;
+    }
+    .grid-container {
+      display: grid;
+      grid-gap: 20px;
+      grid-template-columns: 1fr 10fr 1fr;
+      grid-template-rows: 150px 150px 100px;
+      grid-template-areas: 
+      "sidebar-1 content sidebar-2" 
+      "sidebar-1 content sidebar-2" 
+      "footer footer footer"
+    }
+
+    .item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 5px solid rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      font-size: 35px;
+      background-color: var(--aquamarine);
+    }
+
+
+    .footer {
+      grid-area: footer;
+    }
+
+
+    .item1 {
+      grid-area: sidebar-1;
+    }
+
+    .item2 {
+      grid-area: content;
+    }
+
+    .item3 {
+      grid-area: sidebar-2;
+    }
+
+    @media (max-width: 700px) {
+      .grid-container {
+        grid-template-areas: 
+        "content content content" 
+        "sidebar-1 sidebar-1 sidebar-2" 
+        "footer footer footer"
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="grid-container">
+      <div class="item item1">
+        <p>I'm Sidebar #1</p>
+      </div>
+      <div class="item item2">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, sed.</p>
+        <p>Lorem ipsum d</p>
+      </div>
+      <div class="item item3">
+        <p>I'm Sidebar #2</p>
+      </div>
+      <div class="item footer">
+        <p>I'm the footer</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

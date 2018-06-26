@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+#fixed {
+  padding: 70px;
+  background: #888;
+  text-align: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+
+#relative {
+  position: relative;
+  text-align: center;
+  background: #ddd;
+  padding:20px;
+  height: 200px;
+}
+
+#absolute {
+  position: absolute;
+  bottom: 0;
+  right: -30px;
+  background: #888;
+  padding: 20px;
+  width: 400px;
+}

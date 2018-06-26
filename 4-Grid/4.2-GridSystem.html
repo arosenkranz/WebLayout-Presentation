@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Grid System Demo</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* define your grid here */
+
+    /* give column starting points a name of "col-start" to use in placement of individual items */
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(12, [col-start] 1fr);
+      grid-gap: 20px;
+      grid-auto-flow: dense;
+    }
+
+    /* default all columns to be 12 wide (for mobile) */
+
+    .grid-container>* {
+      grid-column: col-start / span 12;
+    }
+
+    .grid-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 5px solid rgba(0, 0, 0, 0.2);
+      border-radius: 5px;
+      font-size: 35px;
+      background-color: var(--aquamarine);
+    }
+
+    .col-1 {
+      grid-column: span 1;
+    }
+
+    .col-2 {
+      grid-column: span 2;
+    }
+
+    .col-3 {
+      grid-column: span 3;
+    }
+
+    .col-4 {
+      grid-column: span 4;
+    }
+
+    .col-5 {
+      grid-column: span 5;
+    }
+
+    .col-6 {
+      grid-column: span 6;
+    }
+
+    .col-7 {
+      grid-column: span 7;
+    }
+
+    .col-8 {
+      grid-column: span 8;
+    }
+
+    .col-9 {
+      grid-column: span 9;
+    }
+
+    .col-10 {
+      grid-column: span 10;
+    }
+
+    .col-11 {
+      grid-column: span 11;
+    }
+
+    .col-12 {
+      grid-column: span 12;
+    }
+
+ @media only screen and (min-width: 640px) { .col-sm-1 { grid-column: span 1; } .col-sm-2 { grid-column: span 2; } .col-sm-3
+{ grid-column: span 3; } .col-sm-4 { grid-column: span 4; } .col-sm-5 { grid-column: span 5; } .col-sm-6 { grid-column: span
+6; } .col-sm-7 { grid-column: span 7; } .col-sm-8 { grid-column: span 8; } .col-sm-9 { grid-column: span 9; } .col-sm-10
+{ grid-column: span 10; } .col-sm-11 { grid-column: span 11; } .col-sm-12 { grid-column: span 12; } }
+
+    @media only screen and (min-width: 768px) {
+      .col-md-1 {
+        grid-column: span 1;
+      }
+      .col-md-2 {
+        grid-column: span 2;
+      }
+      .col-md-3 {
+        grid-column: span 3;
+      }
+      .col-md-4 {
+        grid-column: span 4;
+      }
+      .col-md-5 {
+        grid-column: span 5;
+      }
+      .col-md-6 {
+        grid-column: span 6;
+      }
+      .col-md-7 {
+        grid-column: span 7;
+      }
+      .col-md-8 {
+        grid-column: span 8;
+      }
+      .col-md-9 {
+        grid-column: span 9;
+      }
+      .col-md-10 {
+        grid-column: span 10;
+      }
+      .col-md-11 {
+        grid-column: span 11;
+      }
+      .col-md-12 {
+        grid-column: span 12;
+      }
+    }
+
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="grid-container">
+      <div class="grid-item item-1 col-12 col-sm-10 col-md-4">1</div>
+      <div class="grid-item item-2 col-12 col-sm-2 col-md-8">2</div>
+      <div class="grid-item item-3">3</div>
+      <div class="grid-item item-4">4</div>
+      <div class="grid-item item-5">5</div>
+      <div class="grid-item item-6">6</div>
+      <div class="grid-item item-7">7</div>
+      <div class="grid-item item-8">8</div>
+      <div class="grid-item item-9">9</div>
+      <div class="grid-item item-10">10</div>
+      <div class="grid-item item-11">11</div>
+      <div class="grid-item item-12">12</div>
+      <div class="grid-item item-13">13</div>
+      <div class="grid-item item-14">14</div>
+      <div class="grid-item item-15">15</div>
+      <div class="grid-item item-16">16</div>
+      <div class="grid-item item-17">17</div>
+      <div class="grid-item item-18">18</div>
+      <div class="grid-item item-19">19</div>
+      <div class="grid-item item-20">20</div>
+      <div class="grid-item item-21">21</div>
+      <div class="grid-item item-22">22</div>
+      <div class="grid-item item-23">23</div>
+      <div class="grid-item item-24">24</div>
+      <div class="grid-item item-25">25</div>
+      <div class="grid-item item-26">26</div>
+      <div class="grid-item item-27">27</div>
+      <div class="grid-item item-28">28</div>
+      <div class="grid-item item-29">29</div>
+      <div class="grid-item item-30">30</div>
+      <div class="grid-item item-31">31</div>
+      <div class="grid-item item-32">32</div>
+      <div class="grid-item item-33">33</div>
+      <div class="grid-item item-34">34</div>
+      <div class="grid-item item-35">35</div>
+      <div class="grid-item item-36">36</div>
+      <div class="grid-item item-37">37</div>
+      <div class="grid-item item-38">38</div>
+      <div class="grid-item item-39">39</div>
+      <div class="grid-item item-40">40</div>
+    </div>
+  </div>
+
+</body>
+
+</html>
