@@ -1,12 +1,14 @@
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,400i,600');
 
 * {
-  box-sizing: border-box
+  box-sizing: border-box;
 }
 
 body {
-  background: #dfdfdf;
+  background: #fffffe;
   font-family: 'Fira Sans', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
 .container {
