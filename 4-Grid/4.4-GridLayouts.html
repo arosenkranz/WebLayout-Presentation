@@ -9,9 +9,7 @@
   <link rel="stylesheet" href="style.css">
 
   <style>
-    body {
-      margin: 50px;
-    }
+    
     .grid-container {
       display: grid;
       grid-gap: 20px;
@@ -41,6 +39,7 @@
 
     .item1 {
       grid-area: sidebar-1;
+      writing-mode: vertical-lr;
     }
 
     .item2 {
@@ -57,6 +56,10 @@
         "content content content" 
         "sidebar-1 sidebar-1 sidebar-2" 
         "footer footer footer"
+      }
+
+      .item1 {
+        writing-mode: unset;
       }
     }
   </style>
