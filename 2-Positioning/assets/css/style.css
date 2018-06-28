@@ -28,6 +28,7 @@ body {
   background: #ddd;
   padding:20px;
   height: 200px;
+  left: -20px;
 }
 
 #absolute {
