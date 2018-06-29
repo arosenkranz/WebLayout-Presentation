@@ -2,6 +2,9 @@
 
 > Here is all of the demo code and extra resources for learning this material
 
+### [Q & A From Session](Q&A.md)
+
+
 ### FLEXBOX
 
 * [Chris Coyer's Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
